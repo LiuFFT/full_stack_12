@@ -1,0 +1,15 @@
+docker container ls
+
+docker exec -it todo-backend_mongo_1 bash
+
+show dbs
+
+use the_database
+
+show collections
+
+db.todos.find({})
+
+db.todos.insert({"text": "Increase the number of tools in my toolbelt", "done": false})
+
+db.todos.find({})
