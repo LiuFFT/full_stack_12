@@ -1,0 +1,19 @@
+docker container ls -a
+
+docker start -i epic_antonelli
+
+apt-get update
+
+apt-get -y install nano
+
+nano /usr/src/app/index.js
+
+apt-get update
+
+apt-get -y install curl
+
+curl -sL https://deb.nodesource.com/setup_16.x | bash
+
+apt install -y nodejs
+
+node /usr/src/app/index.js

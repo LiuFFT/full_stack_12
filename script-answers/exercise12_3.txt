@@ -1,0 +1,9 @@
+docker container ls -a
+
+docker start -i epic_antonelli
+
+apt-get update
+
+apt-get -y install nano
+
+nano /usr/src/app/index.js
