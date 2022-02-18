@@ -1,6 +1,6 @@
 services:
   backend:
-    image: phone-backend
+    image: phone-backend-dev
     build:
       context: ./backend
       dockerfile: dev.Dockerfile
@@ -11,7 +11,7 @@ services:
     container_name: phone-backend
 
   frontend:
-    image: phone-frontend
+    image: phone-frontend-dev
     build:
       context: ./frontend
       dockerfile: dev.Dockerfile
