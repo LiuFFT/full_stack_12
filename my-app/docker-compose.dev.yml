@@ -1,0 +1,22 @@
+services:
+  backend:
+    image: phone-backend
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./backend:/usr/src/app
+    ports:
+      - 3001:3001
+    container_name: phone-backend
+
+  frontend:
+    image: phone-frontend
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./frontend:/usr/src/app
+    ports:
+      - 3000:3000
+    container_name: phone-frontend
